@@ -4,9 +4,6 @@ c_stdlib_version:  # [linux64]
 c_compiler:        # [linux64]
   - gcc            # [linux64]
 
-channels:
-  - https://conda.anaconda.org/services-build-deps
-
 cdt_name:
   - cos7
 
