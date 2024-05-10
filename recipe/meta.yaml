@@ -19,8 +19,7 @@ requirements:
     - {{ compiler('c') }}
 #    - {{ stdlib('c') }}
     - pkg-config
-#    - {{ cdt('systemd-devel') }}
-    - systemd-devel-cos7-x86_64
+    - {{ cdt('systemd-devel') }}
   host:
     - python
     - pip
