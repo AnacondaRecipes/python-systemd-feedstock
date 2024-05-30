@@ -1,4 +1,4 @@
-{% set name = "python-systemd" %}
+{% set name = "systemd-python" %}
 {% set version = "235" %}
 
 package:
@@ -17,7 +17,6 @@ build:
 requirements:
   build:
     - {{ compiler('c') }}
-#    - {{ stdlib('c') }}
     - pkg-config
     - {{ cdt('systemd-devel') }}
   host:
@@ -40,15 +39,21 @@ test:
 about:
   home: https://github.com/systemd/python-systemd
   summary: Python interface for libsystemd
+  description: Python module for native access to the systemd facilitie
+  dev_url: https://github.com/systemd/python-systemd
+  doc_url:https://github.com/systemd/python-systemd
   license: LGPL-2.1-or-later
+  license_family: LGPL
   license_file: LICENSE.txt
 
 extra:
   anaconda-services:
     ref: https://anaconda.zendesk.com/agent/tickets/47182
     reason: Client request
+    recipe-maintainers:
+      - anaobi
+      - bkreider
+
   recipe-maintainers:
-    - anaobi
-    - bkreider
     - timkpaine
     - isuruf
