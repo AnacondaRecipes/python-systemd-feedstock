@@ -41,7 +41,7 @@ about:
   summary: Python interface for libsystemd
   description: Python module for native access to the systemd facilitie
   dev_url: https://github.com/systemd/python-systemd
-  doc_url:https://github.com/systemd/python-systemd
+  doc_url: https://github.com/systemd/python-systemd
   license: LGPL-2.1-or-later
   license_family: LGPL
   license_file: LICENSE.txt
