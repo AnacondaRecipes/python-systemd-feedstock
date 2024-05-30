@@ -12,7 +12,8 @@ source:
 build:
   script: {{ PYTHON }} -m pip install --no-deps --no-build-isolation . -vv
   number: 2
-  skip: True  # [not linux]
+  # aarch and s390 don't have systemd-devel-cos7-XXX packages
+  skip: True  # [(not linux) or linux-aarch64 or linux-s390x ]
 
 requirements:
   build:
